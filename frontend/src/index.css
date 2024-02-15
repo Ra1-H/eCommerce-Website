@@ -1,0 +1,252 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none;
+}
+
+#root{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+body {
+  width:100vw;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --accent-color: #DE8A8A;
+}
+
+::-webkit-scrollbar-corner { background: rgba(0,0,0,0.5); }
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+.active {
+  color:var(--accent-color);
+}
+
+.active-img {
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(300deg) brightness(95%) contrast(80%);
+
+}
+
+
+.App {
+  text-align: center;
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+}
+
+
+.Header{
+  display:flex;
+  width:100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 15px;
+  
+}
+
+
+.products-container{
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content: flex-start;
+  gap:15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.product-card{
+  box-shadow: 2px 2px 2px gray;
+  border-radius: 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:250px;
+  height:350px;
+  padding:5px;
+}
+
+.card-img-wrapper{
+  width:100%;
+  height:60%;
+  display:flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img-wrapper img{
+  width:100%;
+  height:100%
+}
+
+.card-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+
+.card-buttons{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+
+}
+
+.card-buttons button{
+  height:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FiltersBar{
+  display:flex;
+ 
+  align-items: center;
+  gap:4px;
+  padding: 0px 10px 10px 10px;
+  justify-content: space-between;
+
+}
+
+.search-bar{
+  width:100%;
+  height:40px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(210, 210, 210);
+}
+
+
+.SearchFilter-input{
+  width:100%;
+  border-radius: 50px;
+  padding-left: 5px;
+  background-color:#bcd9eb ;
+}
+
+.profile-container {
+  display: inline-block;
+}
+
+.UserInfo-modal {
+  width:150px;
+  height:200px;
+  position: absolute;
+  top: 50px;
+  transform: translateX(-50%);
+  background-color: #ffffff8a;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 2px gray;
+  border-radius: 10px;
+  padding: 8px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:10px;
+  align-items: center;
+}
+
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap:10px;
+  
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+
+.form-span{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width:100%;
+}
+
+.form-inputs{
+  border-radius: 4px;
+  border:2px solid rgb(207, 207, 207);
+  height:40px;
+  width:100%;
+  
+}
+
+.form-button{
+  background-color: #000000;
+  color:white;
+  font-size: 16px;
+  cursor: pointer;
+  border:none;
+  border-radius: 4px;
+  height:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.green-button{
+  background-color: #5dfb6c;
+  color:white;
+  font-size: 16px;
+  cursor: pointer;
+  border:none;
+  border-radius: 4px;
+  height:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:30%;
+}
+
